@@ -298,6 +298,58 @@ body::before {
   justify-content: center;
 }
 
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.85fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.hero-main {
+  min-width: 0;
+}
+
+.hero-photo-wrap {
+  position: relative;
+  justify-self: center;
+  width: min(330px, 78vw);
+  aspect-ratio: 3 / 4;
+  animation: floatY 6s ease-in-out infinite;
+}
+
+.hero-photo {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  border-radius: 20px;
+  border: 1px solid var(--border-strong);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55);
+}
+
+.hero-photo-ring {
+  position: absolute;
+  inset: -12px;
+  z-index: 0;
+  border-radius: 28px;
+  background: linear-gradient(135deg, var(--yellow), var(--blue-bright));
+  opacity: 0.45;
+  filter: blur(16px);
+  animation: pulseGlow 5s ease-in-out infinite;
+}
+
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.32; }
+  50% { opacity: 0.6; }
+}
+
 .hero-name {
   font-family: var(--font-display);
   font-weight: 700;
@@ -736,6 +788,14 @@ body::before {
   .hero {
     min-height: auto;
     padding-top: 48px;
+  }
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .hero-photo-wrap {
+    grid-row: 1;
+    width: min(260px, 70vw);
   }
   .section {
     padding-block: 56px;

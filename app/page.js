@@ -7,6 +7,7 @@ import {
   MailIcon,
   LinkedInIcon,
   GitHubIcon,
+  DownloadIcon,
 } from "@/components/Icons";
 import { profile, skills, projects, education, languages } from "@/data/content";
 
@@ -27,22 +28,42 @@ export default function Home() {
       {/* ===== Hero ===== */}
       <section className="hero container">
         <Reveal>
-          <p className="kicker">// Portfólio</p>
-          <h1 className="hero-name">
-            Alexandre <span className="accent-grad">Pastore</span>
-          </h1>
-          <p className="hero-role">{profile.role}</p>
-          <p className="hero-tagline">{profile.tagline}</p>
-          <p className="hero-location">
-            <PinIcon width={16} height={16} /> {profile.location}
-          </p>
-          <div className="hero-cta">
-            <a href="#projetos" className="btn btn--primary">
-              Ver projetos <ArrowIcon width={18} height={18} />
-            </a>
-            <a href="#contato" className="btn btn--ghost">
-              Entrar em contato
-            </a>
+          <div className="hero-grid">
+            <div className="hero-main">
+              <p className="kicker">// Portfólio</p>
+              <h1 className="hero-name">
+                Alexandre <span className="accent-grad">Pastore</span>
+              </h1>
+              <p className="hero-role">{profile.role}</p>
+              <p className="hero-tagline">{profile.tagline}</p>
+              <p className="hero-location">
+                <PinIcon width={16} height={16} /> {profile.location}
+              </p>
+              <div className="hero-cta">
+                <a href="#projetos" className="btn btn--primary">
+                  Ver projetos <ArrowIcon width={18} height={18} />
+                </a>
+                <a
+                  href={profile.resume}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download
+                  className="btn btn--ghost"
+                >
+                  <DownloadIcon width={18} height={18} /> Baixar currículo
+                </a>
+              </div>
+            </div>
+            <div className="hero-photo-wrap">
+              <span className="hero-photo-ring" aria-hidden="true" />
+              <img
+                src={profile.photo}
+                alt="Foto de Alexandre Pastore"
+                className="hero-photo"
+                width="380"
+                height="500"
+              />
+            </div>
           </div>
         </Reveal>
       </section>
@@ -207,6 +228,15 @@ export default function Home() {
                 className="contact-link"
               >
                 <GitHubIcon width={20} height={20} /> GitHub
+              </a>
+              <a
+                href={profile.resume}
+                target="_blank"
+                rel="noopener noreferrer"
+                download
+                className="contact-link"
+              >
+                <DownloadIcon width={20} height={20} /> Currículo (PDF)
               </a>
             </div>
           </Reveal>

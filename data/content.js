@@ -10,6 +10,8 @@ export const profile = {
   email: "contato@alexandrepastore.com.br",
   linkedin: "https://www.linkedin.com/in/alexandreepastore/",
   github: "https://github.com/alexandrepastoree",
+  photo: "/alexandre.jpg",
+  resume: "/curriculo-alexandre-pastore.pdf",
   bio: [
     "Sou Alexandre, estudante de T.I. e professor de dança — duas áreas que, à primeira vista, parecem mundos opostos, mas que na prática compartilham a mesma essência: lógica, ritmo e criatividade.",
     "Na tecnologia, mergulho em sistemas, linguagens e soluções digitais com a mesma dedicação que levo para a pista de dança. Acredito que as melhores ideias surgem na interseção entre pensamento analítico e sensibilidade artística — e é exatamente aí que eu me encontro.",
@@ -44,7 +46,7 @@ export const projects = [
 export const education = [
   {
     course: "Sistemas de Informação",
-    institution: "",
+    institution: "Universidade Estácio de Sá",
     period: "Cursando",
     level: "Graduação",
   },
@@ -52,6 +54,6 @@ export const education = [
 
 export const languages = [
   { name: "Português", level: "Nativo" },
-  { name: "Inglês", level: "" },
-  { name: "Espanhol", level: "" },
+  { name: "Inglês", level: "Intermediário" },
+  { name: "Espanhol", level: "Intermediário" },
 ];
