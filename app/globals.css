@@ -656,6 +656,13 @@ body::before {
 .edu-card + .edu-card {
   margin-top: 14px;
 }
+.edu-card--course {
+  border-left-color: var(--yellow);
+}
+
+.courses-block {
+  margin-top: 34px;
+}
 .edu-period {
   display: inline-block;
   font-size: 0.78rem;

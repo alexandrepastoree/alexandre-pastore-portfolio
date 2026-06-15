@@ -69,3 +69,12 @@ export const languages = [
   { name: "Inglês", level: "Intermediário" },
   { name: "Espanhol", level: "Intermediário" },
 ];
+
+export const courses = [
+  {
+    name: "Cybersecurity Fundamentals",
+    provider: "IBM SkillsBuild",
+    year: "2023",
+    status: "Concluído",
+  },
+];

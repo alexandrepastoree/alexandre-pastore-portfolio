@@ -9,7 +9,7 @@ import {
   GitHubIcon,
   DownloadIcon,
 } from "@/components/Icons";
-import { profile, skills, projects, education, languages } from "@/data/content";
+import { profile, skills, projects, education, languages, courses } from "@/data/content";
 
 export default function Home() {
   const year = new Date().getFullYear();
@@ -191,6 +191,23 @@ export default function Home() {
                   {lang.level ? (
                     <span className="lang-level">{lang.level}</span>
                   ) : null}
+                </div>
+              ))}
+            </div>
+
+            <div className="courses-block">
+              <div className="section-head">
+                <span className="kicker">// Cursos</span>
+                <h2 className="section-title">Cursos</h2>
+              </div>
+              {courses.map((c) => (
+                <div key={c.name} className="edu-card edu-card--course">
+                  <div className="edu-period">{c.status}</div>
+                  <h3 className="edu-course">{c.name}</h3>
+                  <p className="edu-meta">
+                    {c.provider}
+                    {c.year ? ` · ${c.year}` : ""}
+                  </p>
                 </div>
               ))}
             </div>
