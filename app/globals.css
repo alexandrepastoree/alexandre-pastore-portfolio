@@ -653,6 +653,9 @@ body::before {
   border-radius: 12px;
   padding: 22px;
 }
+.edu-card + .edu-card {
+  margin-top: 14px;
+}
 .edu-period {
   display: inline-block;
   font-size: 0.78rem;

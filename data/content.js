@@ -50,6 +50,18 @@ export const education = [
     period: "Cursando",
     level: "Graduação",
   },
+  {
+    course: "Defesa Cibernética",
+    institution: "Universidade Estácio de Sá",
+    period: "Cursando",
+    level: "Tecnólogo",
+  },
+  {
+    course: "FTDNC Classic",
+    institution: "FitDance",
+    period: "Concluído",
+    level: "Curso",
+  },
 ];
 
 export const languages = [
