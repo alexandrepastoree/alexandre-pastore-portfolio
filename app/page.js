@@ -32,7 +32,7 @@ export default function Home() {
             <div className="hero-main">
               <p className="kicker">// Portfólio</p>
               <h1 className="hero-name">
-                Alexandre <span className="accent-grad">Pastore</span>
+                Alexandre <span className="accent-yellow">Pastore</span>
               </h1>
               <p className="hero-role">{profile.role}</p>
               <p className="hero-tagline">{profile.tagline}</p>
