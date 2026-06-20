@@ -13,8 +13,8 @@ export const profile = {
   photo: "/alexandre.jpg",
   resume: "/curriculo-alexandre-pastore.pdf",
   bio: [
-    "Sou Alexandre, estudante de T.I. e professor de dança — duas áreas que, à primeira vista, parecem mundos opostos, mas que na prática compartilham a mesma essência: lógica, ritmo e criatividade.",
-    "Na tecnologia, mergulho em sistemas, linguagens e soluções digitais com a mesma dedicação que levo para a pista de dança. Acredito que as melhores ideias surgem na interseção entre pensamento analítico e sensibilidade artística — e é exatamente aí que eu me encontro.",
+    "Sou Alexandre, Acadêmico em Sistemas de Informação e Ciências Jurídicas e Sociais, professor de dança — três áreas que, à primeira vista, parecem mundos opostos, mas que na prática compartilham a mesma essência: lógica, ritmo, criatividade e oportunidades justas.",
+    "Na tecnologia, mergulho em sistemas, soluções jurídicas na área digital com a mesma dedicação que levo para a pista de dança. Acredito que as melhores ideias surgem na interseção entre pensamento analítico e sensibilidade artística — e é exatamente aí que eu me encontro.",
     "Como professor de dança, ensino muito mais do que movimentos: transmito confiança, expressão corporal e a capacidade de se comunicar sem palavras. Essa experiência me tornou um comunicador mais empático e atento às pessoas ao meu redor.",
     "Fora do trabalho e dos estudos, você me encontra ao piano ou imerso em alguma partida no PC — sempre buscando novos desafios, sejam eles digitais ou musicais.",
     "Se você procura alguém que une precisão técnica com olhar criativo, chegou ao lugar certo.",
@@ -51,10 +51,10 @@ export const education = [
     level: "Graduação",
   },
   {
-    course: "Defesa Cibernética",
+    course: "Ciências Jurídicas e Sociais",
     institution: "Universidade Estácio de Sá",
     period: "Cursando",
-    level: "Tecnólogo",
+    level: "Graduação",
   },
   {
     course: "FTDNC Classic",
